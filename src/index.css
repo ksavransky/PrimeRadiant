@@ -1,0 +1,27 @@
+body {
+  color: #3e3e3e;
+}
+
+.button {
+  width: 120px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #3e3e3e;
+}
+
+.divider.top {
+  margin: 0px 0px 19px 0px;
+  visibility: hidden;
+}
+
+.divider.top.start {
+  margin: -3px 0px 16px 0px;
+  visibility: hidden;
+}

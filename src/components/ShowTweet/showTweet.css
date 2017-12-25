@@ -1,0 +1,19 @@
+.tweet-container {
+  width: 400px;;
+  position: relative;
+  margin: 20px 0px;
+}
+
+.tweet-container .tweet-number-label {
+  position: absolute;
+  top: -14px;
+  background: #135086;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  left: 47%;
+  height: 30px;
+  width: 30px;
+  z-index: 2;
+  border-radius: 15px;
+}

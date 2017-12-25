@@ -1,0 +1,80 @@
+#app {
+  text-align: center;
+}
+
+#app #app-header {
+  background-color: #135086;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+#app h4, #app h5 {
+  padding: 30px;
+  margin: 0px;
+  color: #3e3e3e;
+}
+
+#app .search-container .button {
+  margin-left: 10px;
+}
+
+.tweet-menu {
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid #135086;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 559px) {
+  .tweet-menu {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .tweet-menu {
+    min-width: 840px;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .tweet-menu {
+    width: 60%;
+  }
+}
+
+.tweet-menu div{
+  margin: 10px 10px 0px 10px;
+  color: white;
+  background: #798f96;
+  height: 50px;
+  width: 150px;
+  line-height: 3;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 559px) {
+  .tweet-menu div{
+    font-size: 16px;
+  }
+}
+
+.tweet-menu .selected {
+  background: #135086;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.page {
+    background-color: #e2e9ff;
+    min-height: calc(100vh - 100px);
+    height: 100%;
+}
+
+
+
