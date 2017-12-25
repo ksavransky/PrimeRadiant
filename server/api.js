@@ -4,12 +4,13 @@ var Twitter = require('twitter-node-client').Twitter;
 var MarkovChain = require('markovchain');
 // var MarkovChain = require('markovchain-generate');
  
+ 
 function twitterSearch(req, res){
   const config = {
-      "consumerKey": "PiRcOvzzbivfKnwfU67DPui31",
-      "consumerSecret": "XDk6pegf6ojDZHtVlaB0ndmBHkmW7vH5v5WXOrY3o6yM37YhzC",
-      "accessToken": "831991073610174464-kyCUce44Jtg0TTDqfnM4RPAfBnGplpJ",
-      "accessTokenSecret": "6SrIYkogDnJgNtATcfGKdkCyH0KhfVoghvixJG0yrsNUW",
+      "consumerKey": "RiG0czyXP878d9Ljnulyjc1dN",
+      "consumerSecret": "VjWEZD7tkBWYNXpRecRGwSvGrdHFivQwnZV9BxLDLvNJyC2YUc",
+      "accessToken": "	831991073610174464-NJFZAcWY2dNK3N436hkao9vzBr6mcBO",
+      "accessTokenSecret": "6UlW8tRzceKgRRkArduRbw9JyT63rfjMQGKrGRJ1mb420",
       "callBackUrl": "http://localhost:3000/"
   }
   var twitter = new Twitter(config);

@@ -25,29 +25,3 @@ export const twitterSearch = (userName) => {
 
     }
 }
-
-export const GENERATE_PHRASE_START = "GENERATE_PHRASE_START";
-export const generatePhraseStart = (text) => {
-    return { type: GENERATE_PHRASE_START, text }
-}
-
-export const GENERATE_PHRASE_RESULTS = "GENERATE_PHRASE_RESULTS";
-export const generatePhraseResults = (data) => {
-    return { type: GENERATE_PHRASE_RESULTS, data }
-}
-
-export const GENERATE_PHRASE_ERROR = "GENERATE_PHRASE_ERROR";
-export const generatePhraseError = (data) => {
-    return { type: GENERATE_PHRASE_ERROR, data }
-}
-
-export const GENERATE_PHRASE = "GENERATE_PHRASE";
-export const generatePhrase = (text) => {
-    return dispatch => {
-        dispatch(generatePhraseStart(text));
-        axios.get(`/api/generate-phrase?text=${text}`)
-            .then(res => dispatch(generatePhraseResults(JSON.stringify(res.data))))
-            .catch(err => dispatch(generatePhraseError(err)))
-
-    }
-}
